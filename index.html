@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather Dashboard</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+   <div class="container">
+       <video autoplay muted loop src="cloud.mp4" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1; object-fit: cover;">
+           Your browser does not support video playback.
+       </video>
+               <!--<img src="ww.jpg" alt="clouds" style="width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: -1;">-->
+       <div class="weather-card">
+           <h1>Weather Predictor</h1>
+           <form id="search-form">
+               <input type="text" id="city-input" placeholder="Enter city name" required style="border-radius: 10px;">
+               <button type="submit">
+                   <i data-lucide="search"></i>
+               </button>
+           </form>
+           <div id="loading" class="hidden">
+               <i data-lucide="loader-2"></i>
+               <p>Loading weather data...</p>
+           </div>
+           <div id="error" class="hidden"></div>
+           <div id="current-weather" class="hidden">
+               <h2>Current Weather in <span id="city-name"></span></h2>
+               <div class="weather-info">
+                   <div class="temperature">
+                       <i id="current-weather-icon" data-lucide="cloud"></i>
+                       <div>
+                           <p id="current-temp" class="temp"></p>
+                           <p id="current-description"></p>
+                       </div>
+                   </div>
+                   <div class="details">
+                       <p><i data-lucide="droplets"></i> Humidity: <span id="current-humidity"></span></p>
+                       <p><i data-lucide="wind"></i> Wind: <span id="current-wind"></span></p>
+                   </div>
+               </div>
+           </div>
+           <div id="forecast" class="hidden">
+               <h2>5-Day Forecast</h2>
+               <div class="forecast-container"></div>
+           </div>
+       </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
