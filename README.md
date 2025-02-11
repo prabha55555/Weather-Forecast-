@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌦 Weather Dashboard
 
 A sleek and modern **Weather Dashboard** that allows users to check real-time weather conditions and a 5-day forecast for any city. The application features a **video background**, **Lucide icons**, and a clean user-friendly UI.
@@ -36,3 +37,6 @@ A sleek and modern **Weather Dashboard** that allows users to check real-time we
 1. Clone this repository:
    ```bash
    git clone https://github.com/prabha55555/Forecasting-weather-.git
+=======
+# Forecasting-weather-
+>>>>>>> 37189390c8c42a217c6b0617295af5eb53ca6f36
